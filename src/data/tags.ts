@@ -68,6 +68,9 @@ export const Tags = {
   /** Tests scoped to the Valorant section. */
   valorant: "@valorant",
 
+  /** Tests scoped to the Destiny2 section. */
+  destiny2: "@destiny2",
+
   /** Cookie / consent banner tests. */
   cookie: "@cookie",
 

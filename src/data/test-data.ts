@@ -48,6 +48,7 @@ export const TestData = {
     tft: "/tft",
     poe2: "/poe-2",
     poe2Guides: "/poe-2/guides",
+    destiny2: "/destiny-2",
     diablo4: "/diablo-4",
     borderlands4: "/borderlands-4",
     nightreign: "/elden-ring-nightreign",
@@ -141,6 +142,9 @@ export const TestData = {
       pageTitle: /Path of Exile 2.*Mobalytics/i,
       subNavLinks: ["Builds", "Guides"] as const,
     },
+    destiny2:{
+      pageTitle: /Destiny 2.*Mobalytics/i
+    }
   },
 
   /**

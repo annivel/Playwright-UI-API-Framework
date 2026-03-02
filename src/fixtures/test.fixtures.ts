@@ -9,6 +9,7 @@ import { GameCardsComponent } from "../components/GameCardsComponent";
 import { loginViaAPI } from "../helpers/auth.helper";
 import { AuthenticationError } from "../errors/test-errors";
 import { createLogger } from "../utils/logger";
+import { Destiny2Page } from "@pages/Destiny2Page";
 
 const log = createLogger("Fixtures");
 
@@ -17,6 +18,7 @@ type MyFixtures = {
   homePage: HomePage;
   poe2Page: POE2Page;
   lolPage: LolPage;
+  destiny2Page: Destiny2Page;
   authenticatedPage: Page;
   authenticatedPoe2Page: POE2Page;
 
@@ -67,6 +69,10 @@ export const test = base.extend<MyFixtures>({
   lolPage: async ({ page }, use) => {
     const lolPage = new LolPage(page);
     await use(lolPage);
+  },
+
+  destiny2Page: async ({ page }, use) => {
+    await use(new Destiny2Page(page));
   },
 
   // ── Component fixtures ────────────────────────────────────────────────────

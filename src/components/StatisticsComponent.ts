@@ -1,10 +1,11 @@
 import { type Page } from "@playwright/test";
 import { BaseComponent } from "./BaseComponent";
+import { TemplateComponent } from "./TemplateComponent";
 
 /**
  * Statistics section — "27% win rate improvement" and related content.
  */
-export class StatisticsComponent extends BaseComponent {
+export class StatisticsComponent extends BaseComponent{
   readonly percentStatistic;
   readonly readResearchLink;
   readonly lcsPartnershipText;
