@@ -56,7 +56,7 @@ export class HomePage extends BasePage {
   /** Navigate to the home page and wait for it to be interactive. */
   async navigate(): Promise<void> {
     await this.goto(config.baseURL);
-    await this.hero.mainHeading.waitFor({ state: "visible", timeout: 15000 });
+    await this.hero.mainHeading.waitFor({ state: "visible"});
     await this.acceptCookiesIfPresent();
   }
 
